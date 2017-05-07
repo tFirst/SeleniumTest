@@ -9,9 +9,3 @@ public class MainTestClass {
 
     public static final List<Integer> countElements = Arrays.asList(1488, 652, 146, 663, 12, 15);
 }
-
-class Assertion {
-    Assertion(String msg) {
-        assert false: msg;
-    }
-}
