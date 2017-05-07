@@ -4,8 +4,8 @@ import java.util.List;
 
 public class MainTestClass {
     public static final List<String> categories = Arrays.asList
-            ("Р›СЋР±Р°СЏ РЅРµРґРІРёР¶РёРјРѕСЃС‚СЊ", "РљРІР°СЂС‚РёСЂС‹", "Р”РѕРј / РєРѕС‚С‚РµРґР¶ / С‚Р°СѓРЅС…Р°СѓСЃ",
-                    "РџР°СЂРєРѕРІРєР° / РіР°СЂР°Р¶", "Р—РµРјРµР»СЊРЅС‹Р№ СѓС‡Р°СЃС‚РѕРє", "РљРѕРјРјРµСЂС‡РµСЃРєР°СЏ РЅРµРґРІРёР¶РёРјРѕСЃС‚СЊ");
+            ("Любая недвижимость", "Квартиры", "Дом / коттедж / таунхаус",
+                    "Парковка / гараж", "Земельный участок", "Коммерческая недвижимость");
 
-    public static final List<Integer> countElements = Arrays.asList(1488, 652, 146, 663, 12, 15);
+    public static final List<Integer> countElements = Arrays.asList(1487, 651, 146, 663, 12, 15);
 }

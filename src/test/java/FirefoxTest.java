@@ -105,7 +105,7 @@ public class FirefoxTest {
     public void testTaskThreeAsc() throws InterruptedException {
         driver.get("http://www.kps42.ru/estate/");
 
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
         synchronized (driver) {
             driver.wait(1000);
         }
@@ -122,7 +122,7 @@ public class FirefoxTest {
 
             if (i == priceValues.size()-1) {
                 WebElement buttonNextPage =
-                        driver.findElement(By.partialLinkText("РґР°Р»СЊС€Рµ"));
+                        driver.findElement(By.partialLinkText("дальше"));
                 if (buttonNextPage != null) {
                     buttonNextPage.click();
                     i = 0;
@@ -141,12 +141,12 @@ public class FirefoxTest {
     public void testTaskThreeDesc() throws InterruptedException {
         driver.get("http://www.kps42.ru/estate/");
 
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
         synchronized (driver) {
             driver.wait(1000);
         }
 
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
         synchronized (driver) {
             driver.wait(1000);
         }
@@ -163,7 +163,7 @@ public class FirefoxTest {
 
             if (i == priceValues.size()-1) {
                 WebElement buttonNextPage =
-                        driver.findElement(By.partialLinkText("РґР°Р»СЊС€Рµ"));
+                        driver.findElement(By.partialLinkText("дальше"));
                 if (buttonNextPage != null) {
                     buttonNextPage.click();
                     i = 0;

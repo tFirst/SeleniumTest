@@ -93,7 +93,7 @@ public class ChromeTest {
     public void testTaskThreeAsc() throws InterruptedException {
         driver.get("http://www.kps42.ru/estate/");
 
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
 
         List<WebElement> priceValues = driver.findElements
                 (By.xpath("/html/body/div[1]/div/div[2]/div/table/tbody/tr/td[7]"));
@@ -107,7 +107,7 @@ public class ChromeTest {
 
             if (i == priceValues.size()-1) {
                 WebElement buttonNextPage =
-                        driver.findElement(By.partialLinkText("РґР°Р»СЊС€Рµ"));
+                        driver.findElement(By.partialLinkText("дальше"));
                 if (buttonNextPage != null) {
                     buttonNextPage.click();
                     i = 0;
@@ -126,8 +126,8 @@ public class ChromeTest {
     public void testTaskThreeDesc() throws InterruptedException {
         driver.get("http://www.kps42.ru/estate/");
 
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
-        driver.findElement(By.partialLinkText("Р¦РµРЅР°, СЂСѓР±.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
+        driver.findElement(By.partialLinkText("Цена, руб.")).click();
 
         List<WebElement> priceValues = driver.findElements
                 (By.xpath("/html/body/div[1]/div/div[2]/div/table/tbody/tr/td[7]"));
@@ -141,7 +141,7 @@ public class ChromeTest {
 
             if (i == priceValues.size()-1) {
                 WebElement buttonNextPage =
-                        driver.findElement(By.partialLinkText("РґР°Р»СЊС€Рµ"));
+                        driver.findElement(By.partialLinkText("дальше"));
                 if (buttonNextPage != null) {
                     buttonNextPage.click();
                     i = 0;
